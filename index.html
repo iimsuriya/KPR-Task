@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000000;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+  
+    header {
+      background-color: #000000;
+      color: yellow;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    h1 {
+      margin: 0;
+    }
+    h2 {
+      color: yellow;
+    }
+    main {
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  
+    section {
+      margin-bottom: 30px;
+    }
+  
+    label {
+      display: block;
+      color: yellow;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+  
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  
+    button {
+      background-color: #333;
+      color: yellow;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  
+    button:hover {
+      background-color:yellow;
+      color: black;
+    }
+  
+    #contactList {
+      list-style: none;
+      padding: 0;
+    }
+  
+    #contactList li {
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+  </style>
+  
+</head>
+<body>
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Contact Form</h2>
+      <form id="contactForm">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="mobile">Mobile Number:</label>
+          <input type="text" id="mobile" name="mobile" required>
+        </div>
+        <div>
+          <label for="caseType">Type of Case:</label>
+          <input type="text" id="caseType" name="caseType" required>
+        </div>
+        <div>
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Contact List</h2>
+      <ul id="contactList">
+      </ul>
+    </section>
+  </main>
+  
+  <!-- Add any JavaScript scripts here -->
+</body>
+</html>
